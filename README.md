@@ -1,43 +1,70 @@
-# e-cuisine-menu
-Project Overview
-The Canteen Ordering System is a web application built with React, enabling users to browse a variety of menu items, customize orders with extra options, and view nutritional facts. The app supports a shopping cart that stores items locally, allowing users to proceed to checkout and review their total. Authentication functionality is implemented, allowing users to sign up, log in, and manage their account. The system is fully mobile-responsive, ensuring an optimal experience across all devices.
+# Getting Started with Create React App
 
-Deployment Link
-You can access the live version of the project by visiting the deployed link below:
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-Login Details
-To test authentication, you can use the following credentials:
+## Available Scripts
 
-Username: testuser@example.com
-Password: password123
+In the project directory, you can run:
 
-Users can also sign up directly from the login page.
+### `npm start`
 
-Feature Checklist
- Display a list of menu items. (ticked)
- Allow users to customize menu items with extras. (ticked)
- Display nutritional facts for menu items. (ticked)
- Implement a shopping cart that stores items locally. (ticked)
- Mobile-responsive design. (ticked)
- Navigate to the cart page and display the cart total. (ticked)
- Implement user authentication (sign up, login, logout). (ticked)
- Protect certain routes so that only authenticated users can access their account and cart. (ticked)
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
- Installation Instructions
-To run this project locally, follow the instructions below:
+The page will reload when you make changes.\
+You may also see any lint errors in the console.
 
-Clone the repository:
+### `npm test`
 
-git clone https://github.com/YOUR_USERNAME/YOUR_REPOSITORY_NAME.git
-Navigate to the project folder:
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-cd YOUR_REPOSITORY_NAME
-Install the dependencies:
+### `npm run build`
 
-npm install
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
-Run the app locally:
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
 
-npm start
-The application will open in your browser at http://localhost:3000.
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
+### `npm run eject`
+
+**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+
+If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+
+You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+
+## Learn More
+
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+
+To learn React, check out the [React documentation](https://reactjs.org/).
+
+### Code Splitting
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+
+### Analyzing the Bundle Size
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+
+### Making a Progressive Web App
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+
+### Advanced Configuration
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+
+### Deployment
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+
+### `npm run build` fails to minify
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
