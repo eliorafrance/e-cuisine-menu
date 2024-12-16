@@ -1,70 +1,94 @@
-# Getting Started with Create React App
+Canteen Ordering System
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Project Overview
+The Canteen Ordering System is a web application designed to allow users to order food from a canteen or cafeteria. It offers a user-friendly interface for customers to browse food items, place orders, and make payments. Admins can manage the food menu and track orders. This system streamlines the food ordering process, reducing wait times and improving user experience.
 
-## Available Scripts
 
-In the project directory, you can run:
 
-### `npm start`
+Login Details
+For testing the authentication and login functionality, use the following credentials:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Username: testuser@example.com
+Password: password123
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Feature Checklist
+ User login and registration
+ View available food items
+ Add items to the cart
+ Place orders and make payments
+ Admin dashboard for managing menu items
+ Order history for users
+ Order tracking for admins
+ Responsive design (mobile and desktop)
+ Integration with third-party payment gateway (future feature)
+ 
+Installation Instructions
 
-### `npm test`
+To run the Canteen Ordering System locally, follow these steps:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Clone the repository:
 
-### `npm run build`
+bash
+Copy code
+git clone https://github.com/your-username/canteen-ordering-system.git
+Navigate to the project directory:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+bash
+Copy code
+cd canteen-ordering-system
+Install dependencies: For frontend:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+bash
+Copy code
+npm install
+For backend (if applicable):
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+bash
+Copy code
+npm install
+Run the project:
 
-### `npm run eject`
+For frontend:
+bash
+Copy code
+npm start
+For backend:
+bash
+Copy code
+npm run dev
+Open the application in your browser at http://localhost:3000.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+API Documentation
+Here is a screenshot showing the Postman tests for the project's API endpoints:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Example Endpoints:
+POST /login
+Description: Authenticates the user.
+Request Body:
 
-## Learn More
+json
+Copy code
+{
+  "username": "testuser@example.com",
+  "password": "password123"
+}
+GET /menu
+Description: Retrieves the list of available food items.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+POST /order
+Description: Places an order for the selected food items.
+Request Body:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+json
+Copy code
+{
+  "items": [
+    {"id": "1", "quantity": 2},
+    {"id": "2", "quantity": 1}
+  ],
+  "total": 15.50
+}
+GET /orders/{userId}
+Description: Fetches order history for the user.
